@@ -1,0 +1,20 @@
+.list
+{
+
+ border:2px solid black;
+ padding: 10px;
+ grid-area: lt;
+}
+.report
+{
+    border:2px solid black;
+    padding: 10px; 
+    grid-area: rp; 
+}
+.form
+{
+    border:2px solid black;
+    padding: 10px; 
+    grid-area: fm;
+
+}
