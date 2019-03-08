@@ -19,7 +19,10 @@ export class Form extends Component {
           <br />
           <button
             onClick={_ => {
-              _this.props.addQuery(_this.refs.titleField.value);
+              _this.props.addQuery(
+                _this.refs.titleField.value,
+                _this.refs.queryField.value
+              );
             }}
           >
             Submit

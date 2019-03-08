@@ -1,8 +1,16 @@
-import { ADD_QUERY } from "./types";
+import { ADD_QUERY, GET_DATA_REQ } from "./types";
 
-export const addQuery = queryvalue => {
+export const addQuery = (titleValue, queryvalue) => {
   return {
     type: ADD_QUERY,
-    query: queryvalue
+    query: queryvalue,
+    title: titleValue
+  };
+};
+
+export const getData = item => {
+  return {
+    type: GET_DATA_REQ,
+    item
   };
 };
