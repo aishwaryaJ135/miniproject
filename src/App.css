@@ -1,16 +1,18 @@
 .App {
   text-align: center;
+  margin: 10px;
   display: grid;
   grid-column-gap: 50px;
   grid-template-areas:
-    "lt lt lt rp rp rp"
-    "lt lt lt rp rp rp"
-    "lt lt lt rp rp rp"
-    "lt lt lt rp rp rp"
-    "lt lt lt rp rp rp"
-    "fm fm fm fm fm fm"
-    "fm fm fm fm fm fm"
-    "fm fm fm fm fm fm";
+    "lt lt lt lt rp rp rp rp"
+    "lt lt lt lt rp rp rp rp"
+    "lt lt lt lt rp rp rp rp"
+    "lt lt lt lt rp rp rp rp"
+    "lt lt lt lt rp rp rp rp"
+    "fm fm fm fm fm fm fm fm"
+    "fm fm fm fm fm fm fm fm"
+    "fm fm fm fm fm fm fm fm"
+    "fm fm fm fm fm fm fm fm";
   grid-gap: 5px;
 }
 
