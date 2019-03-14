@@ -20,7 +20,6 @@ export class Report extends Component {
       .selectAll(".rect")
       .data(data);
 
-    //bar.exit().remove();
 
     bar
       .enter()
@@ -38,7 +37,7 @@ export class Report extends Component {
   render() {
     return (
       <div>
-        <h2>This is the Report</h2>
+        <h2>Report Chart</h2>
         <svg id={"miniSvg"} />
         {this.props.currSelectedItem.data ? this.draw() : null}
       </div>

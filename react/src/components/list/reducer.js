@@ -26,7 +26,6 @@ const listReducer = (state = initialState, action) => {
 
       //Update data in item
       currentItem.data = action.data;
-
       return {
         lastSelectedId: action.id,
         queries: [

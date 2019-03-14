@@ -2,14 +2,51 @@
   border: 2px solid black;
   padding: 10px;
   grid-area: lt;
+  font-family:'Times New Roman';
+  font-size: 15px;
 }
 .report {
   border: 2px solid black;
   padding: 10px;
   grid-area: rp;
+  font-family:'Times New Roman';
+  font-size: 15px;
 }
 .form {
   border: 2px solid black;
   padding: 10px;
   grid-area: fm;
+  font-family:'Times New Roman';
+  font-size: 15px;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+button {
+  width: 100%;
+  background-color: rgb(87, 74, 146);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #205c08b6;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }

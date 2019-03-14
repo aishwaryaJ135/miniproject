@@ -12,13 +12,13 @@ public class QueryRunner extends Controller{
         public Result runs(Request request) {
         JsonNode body = request.body().asJson();
         String query = body.get("query").asText();
-        // String query = "SELECT BusinessUnit cat, SUM(org_amt) ser FROM settlement3 GROUP BY BusinessUnit";
 
-        String dbschema = "iv34demo_datasource";
-        String username = "dev";
-        String password = "dev";
+        String dbschema = "iv3demo_adsschema";
+        String username = "root";
+        String password = "root";
         Connection con=null;
         ArrayNode data=new ObjectMapper().createArrayNode();
+        
         
         try{
         Class.forName("com.mysql.jdbc.Driver");  

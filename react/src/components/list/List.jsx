@@ -10,11 +10,12 @@ export class List extends Component {
   render() {
     return (
       <div>
-        <h2>This is the list</h2>
+        <h2>List</h2>
         {this.props.list.map(item => (
-          <div onClick={_=>{
+          <button onClick={_=>{
+            console.log(item);
             this.props.getData(item)
-          }}>{item.title}</div>
+          }}>{item.title}</button>
         ))}
       </div>
     );

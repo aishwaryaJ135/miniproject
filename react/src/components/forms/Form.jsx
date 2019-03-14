@@ -11,11 +11,11 @@ export class Form extends Component {
     const _this = this;
     return (
       <div>
-        <h2>This is the Form</h2>
+        <h2>Form</h2>
         <div id="form">
-          <input type="text" name="Title" placeholder="" ref={"titleField"} />
+          <input type="text" name="Title" placeholder="Enter title" ref={"titleField"} />
           <br />
-          <input type="text" name="Query" placeholder="" ref={"queryField"} />
+          <input type="text" name="Query" placeholder="Enter query" ref={"queryField"} />
           <br />
           <button
             onClick={_ => {

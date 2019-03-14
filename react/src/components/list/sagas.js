@@ -12,8 +12,8 @@ const getDataFromServer = query => {
     .catch(e => {
       console.log(e);
     });
-  // let cat = ["A", "B", "C", "D"];
-  // return cat.map(d => ({ cat: d, ser: Math.random() * 100 }));
+  //  let cat = ["A", "B", "C", "D"];
+  //  return cat.map(d => ({ cat: d, ser: Math.random() * 100 }));
 };
 
 function* dataSaga(action) {
@@ -22,7 +22,6 @@ function* dataSaga(action) {
 
   //Get data from backend
   const data = yield call(getDataFromServer, query);
-
   //Update store by calling action with new data
   yield put({ type: GET_DATA_SUC, data: data.data, id });
 }
